@@ -1,16 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import HeaderNft from './src/components/HeaderNft';
-import TitileCollection from './src/components/TitleCollection';
-import HomeScreen from './src/views/HomeScreen';
+import { NavigationContainer } from '@react-navigation/native';
+import NavigationStack from './src/navigation/NavigationStack';
 
 
 export default function App() {
   return (
     <>
+
       <StatusBar />
-      <HeaderNft />
-      <TitileCollection />
-      <HomeScreen />
+      <NavigationContainer>
+        <NavigationStack />
+      </NavigationContainer>
     </>
   );
 }

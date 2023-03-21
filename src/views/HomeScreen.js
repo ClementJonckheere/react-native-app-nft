@@ -1,13 +1,16 @@
 import { View, StyleSheet, Text} from "react-native";
-
 import NftList from "../components/NftList";
+import TitleCollection from "../components/TitleCollection";
 import {data} from './../data/data';
 
 const HomeScreen = () => {  
     return (
-            <View style={styles.card}>
-                <NftList cards={data}/>
-            </View>
+            <>
+                <TitleCollection />
+                <View style={styles.card}>
+                    <NftList cards={data}/>
+                </View>
+            </>
     )
 }
 export default HomeScreen;

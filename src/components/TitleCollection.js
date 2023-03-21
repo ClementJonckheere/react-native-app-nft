@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from "react-native";
 
-const TitileCollection = () => { 
+const TitleCollection = () => { 
     return (
         <View>
             <View style={styles.container}>
@@ -9,7 +9,7 @@ const TitileCollection = () => {
         </View>
     )
 }
-export default TitileCollection;
+export default TitleCollection;
 
 const styles = StyleSheet.create({
     container: {
